@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFruitActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgFruit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/apel_fuji"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingEnd="16dp"
+        >
+
+        <TextView
+            android:id="@+id/status_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TERSEDIA"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_weight="3"
+            android:background="@drawable/fruit_label_avail"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/judulbuah_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomTextViewTitle"
+            android:text="Apel"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/harga_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 25.000,- /kg"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jenis_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apel Fuji"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingStart="16dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingStart="16dp"
+        android:background="@color/grey_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Deskripsi"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+    />
+
+    <TextView
+        android:id="@+id/deskripsibuah_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apel Fuji adalah varietas apel Jepang yang diproduksi oleh penyerbukan silang varietas Red Delicious dan Virginia Ralls Janet pada akhir 1930-an. Apel ini dibedakan oleh kulit merah-kuning yang mengelilingi daging putih krem. Apel ini terkenal dengan rasa manis yang luar biasa, keasaman rendah, ketegasan, dan kerenyahan."
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:textSize="12dp"
+        />
+
+
+    <Button
+        android:id="@+id/pesan_btn"
+        android:backgroundTint="@color/orange_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beli Sekarang"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="60dp"
+
+        />
+
+
+
+</LinearLayout>
